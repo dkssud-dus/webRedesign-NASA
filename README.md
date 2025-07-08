@@ -106,7 +106,7 @@
 
 ## 4. Resources
 ### 4.1. Project Brief
-1. [Figma](https://www.figma.com/deck/Tw2G6yCKO9KrGJ4zhjOzUH/-webRedesin--NASA--Project-Brief-?node-id=20-46&t=7KpOSDO9iA6Cxsly-1)
+1. [Figma](https://www.figma.com/deck/Tw2G6yCKO9KrGJ4zhjOzUH/-webRedesin--NASA--Project-Brief-?node-id=20-20&t=2n4g4ziiCtdVFok9-1)
 
 </br>
 </br>
