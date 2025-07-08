@@ -70,6 +70,7 @@
 1. HTML
 2. SCSS (CSS Preprocessor)
 3. JavaScript
+4. Three.js
 
 </br>
 </br>
@@ -94,7 +95,7 @@
 
 ## 3. Read Project Details in Other Languages
 1. English
-2. 한국어
+2. [한국어](https://github.com/dkssud-dus/webRedesign-NASA/blob/main/README_ko.md)
 3. 日本語
 
 </br>
