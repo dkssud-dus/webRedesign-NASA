@@ -34,6 +34,19 @@ NASA(미국 항공우주국)는 전 세계적으로 잘 알려진 국가 기관�
 
 </br>
 
+<details>
+<summary>기존 웹 사이트 보기</summary>
+
+![기존 웹사이트](https://github.com/user-attachments/assets/a32a7351-ef3f-4619-ad4e-827daf142238)
+
+</br>
+</br>
+</br>
+
+</details>
+
+</br>
+
 1. NASA의 미션이나 비전, 상징성이 전면에 드러나지 않음
 2. 뉴스레터, 팟캐스트, 외부 콘텐츠(넷플릭스 등)의 과도한 배치
 3. 주요 콘텐츠 간의 정보 구조와 순서가 무질서하여 사용자 경험 저하
