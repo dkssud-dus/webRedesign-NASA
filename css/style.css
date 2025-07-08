@@ -484,10 +484,16 @@ section.scroll-animate.visible {
   transition: 0.35s;
 }
 .about-details .about-details-inner .section-content-box .about-details-button-list ul li button:hover::before {
-  opacity: 0.7;
+  width: 25px;
+  height: 25px;
+  bottom: -95%;
+  box-shadow: 0 0 10px #fff;
 }
 .about-details .about-details-inner .section-content-box .about-details-button-list ul li button:hover::after {
-  opacity: 0.7;
+  width: 15px;
+  height: 15px;
+  bottom: -80%;
+  box-shadow: 0 0 10px #fff;
 }
 .about-details .about-details-inner .section-content-box .about-details-button-list ul li:nth-child(1) {
   top: 150px;
@@ -524,6 +530,7 @@ section.scroll-animate.visible {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100000;
 }
 .about-details .about-details-modal-list .about-details-modal {
   width: 100%;
@@ -531,6 +538,7 @@ section.scroll-animate.visible {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100000;
 }
 .about-details .about-details-modal-list .about-details-modal .modal-inner {
   padding: 20vh 0;
@@ -903,14 +911,18 @@ section.scroll-animate.visible {
   width: 200px;
   word-break: normal;
 }
-.mission .section-content-box .mission-swiper .swiper-wrapper .swiper-slide .mission-title:hover strong {
-  font-size: 40px;
-}
 .mission .section-content-box .mission-swiper .swiper-wrapper .swiper-slide .mission-title:hover strong::before {
-  opacity: 0.7;
+  width: 25px;
+  height: 25px;
+  bottom: -95%;
+  box-shadow: 0 0 10px #fff;
 }
 .mission .section-content-box .mission-swiper .swiper-wrapper .swiper-slide .mission-title:hover strong::after {
-  opacity: 0.7;
+  width: 15px;
+  height: 15px;
+  top: 42%;
+  right: -17.2%;
+  box-shadow: 0 0 10px #fff;
 }
 .mission .section-content-box .mission-swiper .swiper-wrapper .swiper-slide .mission-info {
   width: 1200px;
@@ -1135,7 +1147,7 @@ section.scroll-animate.visible {
   position: fixed;
   bottom: 5vh;
   right: 5vw;
-  z-index: 10000;
+  z-index: 1000;
   animation: goToTop 1s infinite linear;
   transition: 0.5s;
 }
