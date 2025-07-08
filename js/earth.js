@@ -7,11 +7,11 @@ document.body.appendChild(renderer.domElement);
 
 // 텍스처 로드
 const loader = new THREE.TextureLoader();
-const dayMap = loader.load('../textures/earth-day-map.jpg');
-const nightMap = loader.load('../textures/earth-night-map.jpg');
-const cloudTexture = loader.load('../textures/earth-cloud-map.jpg');
-const normalMap = loader.load('../textures/earth-normal-map.jpg');
-const specularMap = loader.load('../textures/earth-specular-map.jpg');
+const dayMap = loader.load('/webRedesign-NASA/textures/earth-day-map.jpg');
+const nightMap = loader.load('/webRedesign-NASA/textures/earth-night-map.jpg');
+const cloudTexture = loader.load('/webRedesign-NASA/textures/earth-cloud-map.jpg');
+const normalMap = loader.load('/webRedesign-NASA/textures/earth-normal-map.jpg');
+const specularMap = loader.load('/webRedesign-NASA/textures/earth-specular-map.jpg');
 
 // 셰이더 코드
 const earthVertexShader = `

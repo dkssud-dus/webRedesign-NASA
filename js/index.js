@@ -6,17 +6,17 @@ wrap.addEventListener('scroll', () => {
   const maxScroll = wrap.scrollHeight - wrap.clientHeight;
   const scrollProgress = scrollY / maxScroll; // 0 ~ 1
 
-
-
   const scrollBox = wrap.querySelector('.scroll-box');
   const topButton = wrap.querySelector('.top-button');
 
   // 스크롤시 요소 변화
   if (scrollProgress < .1 ) {
     scrollBox.style.opacity = '1';
+    scrollBox.style.display = 'flex';
     topButton.style.opacity = '0';
   } else {
     scrollBox.style.opacity = '0';
+    scrollBox.style.display = 'none';
     topButton.style.opacity = '1';
   } 
 
@@ -149,7 +149,41 @@ function type() {
 
 type();
 
-// 요소 선택
+/* section .about-details */
+
+// count
+const countNumber = document.querySelectorAll('.counter');
+
+countNumber.forEach((counter) => {
+  counter.textContent = '0';
+  const targetNumber = +counter.getAttribute('data-count');
+})
+
+function updateCounter(counter) {
+  counter.textContent = '0';
+  const targetNumber = +counter.getAttribute('data-count');
+
+  let frame = 0;
+  const maxFrame = 30;
+  
+  const animate = () => {
+    const count = +counter.textContent;
+    const progress = frame / maxFrame;
+    const nextCount = Math.floor(progress * targetNumber);
+  
+    if (frame >= maxFrame) {
+      counter.textContent = targetNumber;
+    } else {
+      counter.textContent = nextCount;
+      frame++;
+      requestAnimationFrame(animate);
+    }
+  };
+  
+  animate();
+}
+
+// button ↔ modal
 const modalButtons = document.querySelectorAll('.about-details-button-list ul li button');
 const modalBackground = document.querySelector('.about-details-modal-list');
 const modalContents = document.querySelectorAll('.about-details-modal');
@@ -174,6 +208,9 @@ modalButtons.forEach((button, index) => {
       video.currentTime = 0;
       video.play();
     });
+
+    const countersInModal = modalContents[index].querySelectorAll('.counter');
+    countersInModal.forEach(updateCounter);
 
     wrap.classList.add('no-scroll');
   });

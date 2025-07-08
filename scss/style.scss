@@ -262,7 +262,7 @@ section{
   }
   &.scroll-animate{
     &.visible{
-      background-color: rgba($Black, .3);
+      background: linear-gradient(transparent,  rgba($Black, .3));
     }
   }
 }
@@ -270,6 +270,7 @@ section{
 /* section .about-details */
 .about-details{
   position: relative;
+  background: linear-gradient(rgba($Black, .3), transparent);
   .about-details-inner{
     .section-content-box{
       .about-details-button-list{
@@ -341,7 +342,7 @@ section{
   .about-details-modal-list{
     display: none;
     width: 100vw; height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0; left: 0;
     .about-details-modal{
       width: 100%; height: 100%;
@@ -375,6 +376,11 @@ section{
         }
         .modal-content-box{
           margin: auto;
+          .counter{
+            font-size: $h1-px;
+            font-weight: bold;
+            font-style: italic;
+          }
         }
       }
       &.economic-benefits{
@@ -444,7 +450,17 @@ section{
               justify-content: space-between;
               align-items: center;
               li{
-                img{}
+                width: 240px; height: 360px;
+                overflow: hidden;
+                img{
+                  width: 100%; height: 100%;
+                  transition: .35s;
+                }
+                &:hover{
+                  img{
+                    transform: scale(1.1);
+                  }
+                }
               }
             }
           }
