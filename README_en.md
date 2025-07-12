@@ -52,9 +52,9 @@ The current website has the following issues:
 </br>
 
 1. NASA’s mission, vision, and symbolism are not prominently displayed
-1. Excessive placement of newsletters, podcasts, and external content (Netflix, etc.)
-1. Poor user experience due to disorganized information structure and ordering of main content
-1. Static and non-immersive web composition that fails to visually represent the core keyword ‘space’
+2. Excessive placement of newsletters, podcasts, and external content (Netflix, etc.)
+3. Poor user experience due to disorganized information structure and ordering of main content
+4. Static and non-immersive web composition that fails to visually represent the core keyword ‘space’
 
 </br>
 </br>
@@ -75,13 +75,13 @@ and improve the information structure so users can more clearly recognize and en
 
 </br>
 
-1. **Brand Image and Value Enhancement**  
+2. **Brand Image and Value Enhancement**  
    2.1. Intuitively convey NASA’s influence, symbolism, and vision on the main screen.  
    2.2. Use three.js to express NASA’s space imagery and philosophy in an immersive way.
 
 </br>
 
-1. **Astronaut Leaving Earth**  
+3. **Astronaut Leaving Earth**  
    3.1. As a concept for user website immersion, provide visual enjoyment.  
    3.2. Remind users of NASA’s space exploration projects.
 
@@ -96,8 +96,8 @@ and improve the information structure so users can more clearly recognize and en
 ### Rotating Earth
 
 1. Insert a rotating Earth model in the main visual, values, and news sections.
-1. The Earth’s day/night textures blend harmoniously according to lighting.
-1. Clouds and atmosphere rotate together with Earth at different speeds.
+2. The Earth’s day/night textures blend harmoniously according to lighting.
+3. Clouds and atmosphere rotate together with Earth at different speeds.
 
 </br>
 </br>
@@ -106,7 +106,7 @@ and improve the information structure so users can more clearly recognize and en
 ### Earth Scale/Position Response to Scrolling
 
 1. The Earth model responds to scrolling by scaling down or changing position values.
-1. This feature aligns with the keyword ‘astronaut leaving Earth’.
+2. This feature aligns with the keyword ‘astronaut leaving Earth’.
 
 </br>
 </br>
@@ -117,9 +117,9 @@ Core features were implemented using Three.js and JS, with study records (in Kor
 </br>
 
 1. [Understanding Three.js Basic Concepts - Creating a Rotating Cube](https://buttoned-gibbon-63a.notion.site/Three-js-225f5057cabe80f6afffd428c29402b1?source=copy_link)
-1. [Creating a Rotating Earth with Three.js](https://buttoned-gibbon-63a.notion.site/Three-js-225f5057cabe801a8be6f7b72dbbee36?source=copy_link)
-1. [Creating a Rotating Earth Using Three.js Shaders](https://buttoned-gibbon-63a.notion.site/Three-js-225f5057cabe80508daceeac924d89a4?source=copy_link)
-1. [Implementing Three.js Scroll ↔ Model Events](https://buttoned-gibbon-63a.notion.site/Three-js-22af5057cabe80c4b400ef9ab6159545?source=copy_link)
+2. [Creating a Rotating Earth with Three.js](https://buttoned-gibbon-63a.notion.site/Three-js-225f5057cabe801a8be6f7b72dbbee36?source=copy_link)
+3. [Creating a Rotating Earth Using Three.js Shaders](https://buttoned-gibbon-63a.notion.site/Three-js-225f5057cabe80508daceeac924d89a4?source=copy_link)
+4. [Implementing Three.js Scroll ↔ Model Events](https://buttoned-gibbon-63a.notion.site/Three-js-22af5057cabe80c4b400ef9ab6159545?source=copy_link)
 
 </br>
 </br>
@@ -148,7 +148,7 @@ Core features were implemented using Three.js and JS, with study records (in Kor
 #### Implementation Summary
 
 1. Used Three.js to load Earth model and set camera position close.
-1. To emphasize the Earth model, catchphrase/navigation/search box were kept in grayscale colors with minimal visual weight.
+2. To emphasize the Earth model, catchphrase/navigation/search box were kept in grayscale colors with minimal visual weight.
 
 <br/>
 <br/>
@@ -189,7 +189,7 @@ Core features were implemented using Three.js and JS, with study records (in Kor
 #### Implementation Summary
 
 1. On scroll, the Earth model shrinks to show entirely on screen with value and influence keywords arranged in a circle.
-1. Clicking each keyword opens a full-screen modal, with return via “Return to NASA Do” at bottom center.  
+2. Clicking each keyword opens a full-screen modal, with return via “Return to NASA Do” at bottom center.  
    2.1. Each keyword has different layouts and overlay configurations.  
    2.2. Modal popups include effects like number count-up and auto-playing videos for visual enhancement.
 
@@ -212,7 +212,7 @@ Core features were implemented using Three.js and JS, with study records (in Kor
 #### Implementation Summary
 
 1. On scroll, the Our Mission section appears from `↑` direction with a full-screen swiper.
-1. At this point, section content is implemented to cover the Earth.
+2. At this point, section content is implemented to cover the Earth.
 
 <br/>
 <br/>
@@ -256,7 +256,7 @@ Core features were implemented using Three.js and JS, with study records (in Kor
 1. On scroll, the progressively shrinking Earth is fixed at the top right in a very small size.  
    1.1. This design is inspired by Voyager 1’s “Pale Blue Dot”.  
    1.2. It aims to convey that NASA’s journey will continue and invites users to join that journey.
-1. Podcast/Newsletter/NASA + Live are all designed as card formats.
+2. Podcast/Newsletter/NASA + Live are all designed as card formats.
 
 <br/>
 <br/>
@@ -277,7 +277,7 @@ Core features were implemented using Three.js and JS, with study records (in Kor
 #### Implementation Summary
 
 1. Footer is implemented with a three-tier structure of SNS, catchphrase, and symbol.
-1. The top button returns to the main visual’s large Earth image at the very top, so it uses a rocket icon meaning “return to Earth”.
+2. The top button returns to the main visual’s large Earth image at the very top, so it uses a rocket icon meaning “return to Earth”.
 
 <br/>
 <br/>
